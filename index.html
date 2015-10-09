@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+  <title>Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.min.js"></script>
+
+  <!-- We need angular-ui-router for the $state provider which lets us call $state.go in the directive to redirect them. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+</head>
+<body>
+  <div ng-controller="mainController as main">
+    <!-- flash-message is our directive. Inside the template we ng-repeat through all alerts 
+          We use ng-show to only show it when there are alerts -->
+    <div ng-show="main.alerts" flash-message>
+    </div>
+    <h1>{{main.title}}</h1>
+    <script type="text/javascript" src="app.js"></script>
+  </div>
+</body>
+</html>
