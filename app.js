@@ -25,6 +25,7 @@
       alerts: [],
       flashMessage: function(type, message) {
         this.alerts.push({type: type, msg: message, linkText: 'view it here'});
+        this.alerts.push({type: type, msg: 'hello world', linkText: 'test text'});
       }
     }
   })
